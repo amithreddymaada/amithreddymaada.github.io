@@ -1,77 +1,117 @@
-/* style.css */
 
+/* Updated style.css */
+
+/* General Styles */
 html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fafafa;
-    color: #333;
-  }
-  
-  .hero {
-    background: #333;
-    color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .hero-content h1 {
-    margin: 0;
-    font-size: 2.5em;
-  }
-  
-  .hero-content .tagline {
-    margin-top: 0.5em;
-    font-style: italic;
-    color: #ccc;
-  }
-  
-  .hero-cta .btn {
-    background: #007BFF;
-    color: #fff;
-    padding: 0.75em 1em;
-    border-radius: 4px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 1em;
-  }
-  
-  .section {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .section h2 {
-    margin-top: 0;
-    font-size: 1.8em;
-    margin-bottom: 0.5em;
-    color: #444;
-  }
-  
-  .project-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .project {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 4px;
-  }
-  
-  .resume-link {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .footer {
-    background: #222;
-    color: #ccc;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background: #333;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+}
+
+.hero-content .tagline {
+  font-style: italic;
+  color: #ccc;
+}
+
+.hero-cta .btn {
+  background: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Section Styling */
+.section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  color: #444;
+  font-size: 1.8em;
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* About Me Section */
+.about-paragraph {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Resume Formatting */
+.resume-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.resume-section {
+  flex: 1 1 45%;
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 5px solid #007BFF;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resume-section h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+/* Project Section */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+.project-description {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.project-tech-stack {
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 10px 0;
+}
